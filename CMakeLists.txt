@@ -5,7 +5,7 @@ project ("CAssistant")
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 # 设置Qt环境变量
-set(CMAKE_PREFIX_PATH E:/Qt/Qt5.9.9/5.9.9/msvc2017_64)
+set(CMAKE_PREFIX_PATH /home/ubuntu/Qt5.9.9/5.9.9/gcc_64)
 # moc自动编译
 set(CMAKE_AUTOMOC ON)
 # qrc自动编译
@@ -19,8 +19,8 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 aux_source_directory(. DIR_SRC)
 aux_source_directory(${PROJECT_SOURCE_DIR}/src DIR_CASS_SRC)
 
-set(REQUIRED_LIBS Core Gui Widgets)
-set(REQUIRED_LIBS_QUALIFIED Qt5::Core Qt5::Gui Qt5::Widgets)
+set(REQUIRED_LIBS Core Gui Widgets PrintSupport)
+set(REQUIRED_LIBS_QUALIFIED Qt5::Core Qt5::Gui Qt5::Widgets Qt5::PrintSupport)
 
 find_package(Qt5 COMPONENTS ${REQUIRED_LIBS} REQUIRED)
 file(GLOB MOCS ${PROJECT_SOURCE_DIR}/include/*.h)
