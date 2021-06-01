@@ -5,7 +5,7 @@ project ("CAssistant")
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 # 设置Qt环境变量
-set(CMAKE_PREFIX_PATH /home/ubuntu/Qt5.9.9/5.9.9/gcc_64)
+set(CMAKE_PREFIX_PATH /home/kubuntu/Qt5.9.9/5.9.9/gcc_64)
 # moc自动编译
 set(CMAKE_AUTOMOC ON)
 # qrc自动编译
